@@ -19,6 +19,6 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'todomvc/test-results/junit.xml'
+    testResultsFiles: 'todomvc/test-results/junit-results.xml'
     failTaskOnFailedTests: true
     testRunTitle: 'Playwright Tests'

@@ -1,0 +1,92 @@
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="30.039">
+<testsuite name="example.spec.ts" timestamp="1651775768942" hostname="" tests="4" failures="0" skipped="0" time="15.468" errors="0">
+<testcase name="New Todo should allow me to add todo items" classname="[chromium] › example.spec.ts:14:3 › New Todo › should allow me to add todo items" time="10.041">
+<system-out>
+
+https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-internal/971440128771756032/03cc4d54181bd8dff2805409c027f0ff1b05cc9b-c8ade6cca8c13b6c6d7930f17b97f7daa14a963e/trace?trace=https://playwright75006storage.azureedge.net/971440128771756032/%5Cclear-Clear-completed-button-should-display-the-correct-text-chromium-latest-linux-ubuntu-latest-playwright%5Ctrace.zip?sv=2020-08-04&st=2022-05-04T15%3A57%3A32Z&se=2022-08-02T15%3A57%3A32Z&sr=b&sp=r&sig=yGL6tx0t%2BrrqXq2UmP1eLcZGVkULCH4G1kt4WxHCk68%3D
+
+</system-out>
+</testcase>
+<testcase name="New Todo should clear text input field when an item is added" classname="[chromium] › example.spec.ts:37:3 › New Todo › should clear text input field when an item is added" time="1.706" >
+<system-out>
+
+https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-internal/971440128771756032/03cc4d54181bd8dff2805409c027f0ff1b05cc9b-c8ade6cca8c13b6c6d7930f17b97f7daa14a963e/trace?trace=https://playwright75006storage.azureedge.net/971440128771756032/%5Cclear-Clear-completed-button-should-display-the-correct-text-chromium-latest-linux-ubuntu-latest-playwright%5Ctrace.zip?sv=2020-08-04&st=2022-05-04T15%3A57%3A32Z&se=2022-08-02T15%3A57%3A32Z&sr=b&sp=r&sig=yGL6tx0t%2BrrqXq2UmP1eLcZGVkULCH4G1kt4WxHCk68%3D
+
+</system-out>
+</testcase>
+<testcase name="New Todo should append new items to the bottom of the list" classname="[chromium] › example.spec.ts:47:3 › New Todo › should append new items to the bottom of the list" time="2.08">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-append-new-items-to-the-bottom-of-the-list-chromium\trace.zip]]
+
+</system-out>
+</testcase>
+<testcase name="New Todo should show #main and #footer when items added" classname="[chromium] › example.spec.ts:61:3 › New Todo › should show #main and #footer when items added" time="1.641">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-show-main-and-footer-when-items-added-chromium\trace.zip]]
+
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="1651775768942" hostname="" tests="4" failures="0" skipped="0" time="18.589" errors="0">
+<testcase name="New Todo should allow me to add todo items" classname="[firefox] › example.spec.ts:14:3 › New Todo › should allow me to add todo items" time="12.257">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-allow-me-to-add-todo-items-firefox\trace.zip]]
+
+</system-out>
+</testcase>
+<testcase name="New Todo should clear text input field when an item is added" classname="[firefox] › example.spec.ts:37:3 › New Todo › should clear text input field when an item is added" time="2.538">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-clear-text-input-field-when-an-item-is-added-firefox\trace.zip]]
+
+</system-out>
+</testcase>
+<testcase name="New Todo should append new items to the bottom of the list" classname="[firefox] › example.spec.ts:47:3 › New Todo › should append new items to the bottom of the list" time="2.247">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-append-new-items-to-the-bottom-of-the-list-firefox\trace.zip]]
+
+</system-out>
+</testcase>
+<testcase name="New Todo should show #main and #footer when items added" classname="[firefox] › example.spec.ts:61:3 › New Todo › should show #main and #footer when items added" time="1.547">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-show-main-and-footer-when-items-added-firefox\trace.zip]]
+
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="1651775768942" hostname="" tests="4" failures="0" skipped="0" time="27.696" errors="0">
+<testcase name="New Todo should allow me to add todo items" classname="[webkit] › example.spec.ts:14:3 › New Todo › should allow me to add todo items" time="15.371">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-allow-me-to-add-todo-items-webkit\trace.zip]]
+
+</system-out>
+</testcase>
+<testcase name="New Todo should clear text input field when an item is added" classname="[webkit] › example.spec.ts:37:3 › New Todo › should clear text input field when an item is added" time="4.102">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-clear-text-input-field-when-an-item-is-added-webkit\trace.zip]]
+
+</system-out>
+</testcase>
+<testcase name="New Todo should append new items to the bottom of the list" classname="[webkit] › example.spec.ts:47:3 › New Todo › should append new items to the bottom of the list" time="5.258">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-append-new-items-to-the-bottom-of-the-list-webkit\trace.zip]]
+
+</system-out>
+</testcase>
+<testcase name="New Todo should show #main and #footer when items added" classname="[webkit] › example.spec.ts:61:3 › New Todo › should show #main and #footer when items added" time="2.965">
+<system-out>
+
+[[ATTACHMENT|..\..\test-results\example-New-Todo-should-show-main-and-footer-when-items-added-webkit\trace.zip]]
+
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
