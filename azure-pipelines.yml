@@ -16,3 +16,9 @@ steps:
   displayName: 'Run Playwright Tests'
   workingDirectory: todomvc
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'todomvc/test-results/junit.xml'
+    failTaskOnFailedTests: true
+    testRunTitle: 'Playwright Tests'
