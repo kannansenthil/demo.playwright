@@ -3,14 +3,14 @@
 <testcase name="New Todo should allow me to add todo items" classname="[chromium] › example.spec.ts:14:3 › New Todo › should allow me to add todo items" time="10.041">
 <system-out>
 
-https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-internal/971440128771756032/03cc4d54181bd8dff2805409c027f0ff1b05cc9b-c8ade6cca8c13b6c6d7930f17b97f7daa14a963e/trace?trace=https://playwright75006storage.azureedge.net/971440128771756032/%5Cclear-Clear-completed-button-should-display-the-correct-text-chromium-latest-linux-ubuntu-latest-playwright%5Ctrace.zip?sv=2020-08-04&st=2022-05-04T15%3A57%3A32Z&se=2022-08-02T15%3A57%3A32Z&sr=b&sp=r&sig=yGL6tx0t%2BrrqXq2UmP1eLcZGVkULCH4G1kt4WxHCk68%3D
+https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-internal/971440128771756032/03cc4d54181bd8dff2805409c027f0ff1b05cc9b-c8ade6cca8c13b6c6d7930f17b97f7daa14a963e/trace
 
 </system-out>
 </testcase>
 <testcase name="New Todo should clear text input field when an item is added" classname="[chromium] › example.spec.ts:37:3 › New Todo › should clear text input field when an item is added" time="1.706" >
 <system-out>
 
-https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-internal/971440128771756032/03cc4d54181bd8dff2805409c027f0ff1b05cc9b-c8ade6cca8c13b6c6d7930f17b97f7daa14a963e/trace?trace=https://playwright75006storage.azureedge.net/971440128771756032/%5Cclear-Clear-completed-button-should-display-the-correct-text-chromium-latest-linux-ubuntu-latest-playwright%5Ctrace.zip?sv=2020-08-04&st=2022-05-04T15%3A57%3A32Z&se=2022-08-02T15%3A57%3A32Z&sr=b&sp=r&sig=yGL6tx0t%2BrrqXq2UmP1eLcZGVkULCH4G1kt4WxHCk68%3D
+https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-internal/971440128771756032/03cc4d54181bd8dff2805409c027f0ff1b05cc9b-c8ade6cca8c13b6c6d7930f17b97f7daa14a963e/trace
 
 </system-out>
 </testcase>
