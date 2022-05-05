@@ -8,18 +8,10 @@ https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-intern
 </system-out>
 </testcase>
 <testcase name="New Todo should clear text input field when an item is added" classname="[chromium] › example.spec.ts:37:3 › New Todo › should clear text input field when an item is added" time="1.706" >
-<system-out>
-
-https://playwright-75006-webapp.azurewebsites.net/playwright-service/demo-internal/971440128771756032/03cc4d54181bd8dff2805409c027f0ff1b05cc9b-c8ade6cca8c13b6c6d7930f17b97f7daa14a963e/trace
-
-</system-out>
+    <failure message="test failure  &lt;a href=&quot;https://playwright-75006-webapp.azurewebsites.net/&quot;&gt;See trace here!&lt;/a  &gt; " > Assertion failed </failure>
 </testcase>
 <testcase name="New Todo should append new items to the bottom of the list" classname="[chromium] › example.spec.ts:47:3 › New Todo › should append new items to the bottom of the list" time="2.08">
-<system-out>
-
-[[ATTACHMENT|..\..\test-results\example-New-Todo-should-append-new-items-to-the-bottom-of-the-list-chromium\trace.zip]]
-
-</system-out>
+    <failure message="test failure  &lt;a href=&quot;https://playwright-75006-webapp.azurewebsites.net/&quot;&gt;See trace here!&lt;/a  &gt; " > Assertion failed </failure>
 </testcase>
 <testcase name="New Todo should show #main and #footer when items added" classname="[chromium] › example.spec.ts:61:3 › New Todo › should show #main and #footer when items added" time="1.641">
 <system-out>
