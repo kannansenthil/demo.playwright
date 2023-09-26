@@ -1,0 +1,747 @@
+{
+	"info": {
+		"_postman_id": "c670a94b-2c94-430f-8ff0-78c6415c265c",
+		"name": "Reservation Shopping Official",
+		"description": "Collection for Stop Sell WebAPI endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Booking Rules",
+			"item": [
+				{
+					"name": "BookingWindows - Get Unavailable Units",
+					"id": "f23b4730-9128-4bcd-8653-4e4718e3881c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{booking-rules-api-url}}/api/booking-windows/availability/unavailable-unit-ids?CheckIn=2019-10-14&CheckOut=2019-10-15&InventoryCollectionId=4",
+							"host": [
+								"{{booking-rules-api-url}}"
+							],
+							"path": [
+								"api",
+								"booking-windows",
+								"availability",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "CheckIn",
+									"value": "2019-10-14"
+								},
+								{
+									"key": "CheckOut",
+									"value": "2019-10-15"
+								},
+								{
+									"key": "InventoryCollectionId",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InventoryCollectionBlackoutWindows - Get Unavailable Units Copy",
+					"id": "0e606ad2-a38e-4ea5-81f4-339cd0cf6982",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{booking-rules-api-url}}/api/inventory-collection-blackout-windows/availability/unavailable-unit-ids?CheckIn=2019-10-14&CheckOut=2019-10-15&InventoryCollectionId=4",
+							"host": [
+								"{{booking-rules-api-url}}"
+							],
+							"path": [
+								"api",
+								"inventory-collection-blackout-windows",
+								"availability",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "CheckIn",
+									"value": "2019-10-14"
+								},
+								{
+									"key": "CheckOut",
+									"value": "2019-10-15"
+								},
+								{
+									"key": "InventoryCollectionId",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Liveness",
+					"id": "be7d4173-3546-4697-8b24-5526778424e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{booking-rules-api-url}}/health/liveness"
+					},
+					"response": []
+				},
+				{
+					"name": "Health Readiness",
+					"id": "993c0b22-95e2-4ff6-ab0e-f99d1bfc9437",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{booking-rules-api-url}}/health/readiness"
+					},
+					"response": []
+				}
+			],
+			"id": "1bff0ce4-6a3f-424e-b30b-0d25aa6b9e37"
+		},
+		{
+			"name": "Entitlement",
+			"item": [
+				{
+					"name": "Get Entitled Units",
+					"id": "0a3db645-caac-4780-8ecd-82c3065dfcca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{entitlement-api-url}}/api/availability/entitled-unit-ids/?inventoryCollectionId=4",
+							"host": [
+								"{{entitlement-api-url}}"
+							],
+							"path": [
+								"api",
+								"availability",
+								"entitled-unit-ids",
+								""
+							],
+							"query": [
+								{
+									"key": "inventoryCollectionId",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Readiness",
+					"id": "8287ebcc-bdee-4f8a-85d9-452cf8600b11",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{entitlement-api-url}}/health/readiness"
+					},
+					"response": []
+				},
+				{
+					"name": "Health Liveness",
+					"id": "a8adf1b5-f556-4eac-acb1-004f7388d014",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{entitlement-api-url}}/health/liveness"
+					},
+					"response": []
+				}
+			],
+			"id": "aab685c1-6149-440d-af0a-2e754bf9422c"
+		},
+		{
+			"name": "Holds",
+			"item": [
+				{
+					"name": "Get Unavailable Units",
+					"id": "1c59264f-8864-418e-964a-f946a7c6ad83",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{holds-api-url}}/api/availability/unavailable-unit-ids?CheckIn=2019-10-14&CheckOut=2019-10-15",
+							"host": [
+								"{{holds-api-url}}"
+							],
+							"path": [
+								"api",
+								"availability",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "CheckIn",
+									"value": "2019-10-14"
+								},
+								{
+									"key": "CheckOut",
+									"value": "2019-10-15"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "c87b76c3-71ed-4941-b3a7-28beabd4ac02"
+		},
+		{
+			"name": "Inventory Configuration",
+			"item": [
+				{
+					"name": "UnitOperability - Get Unavailable Units",
+					"id": "8b55d99c-dd65-40f4-b149-8bff29f49430",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{inventory-configuration-api-url}}/api/unit-readiness/availability/unit-operability/unavailable-unit-ids"
+					},
+					"response": []
+				},
+				{
+					"name": "UnitOperationalDates - Get Unavailable Units",
+					"id": "a224b871-17d5-4f08-bc73-7a563fccefc6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{inventory-configuration-api-url}}/api/unit-readiness/availability/unit-operational-dates/unavailable-unit-ids?CheckIn=2019-10-14&CheckOut=2019-10-15",
+							"host": [
+								"{{inventory-configuration-api-url}}"
+							],
+							"path": [
+								"api",
+								"unit-readiness",
+								"availability",
+								"unit-operational-dates",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "CheckIn",
+									"value": "2019-10-14"
+								},
+								{
+									"key": "CheckOut",
+									"value": "2019-10-15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnitActivationWindows-without - Get Unavailable Units",
+					"id": "e58d29f3-ce52-4ae1-8d41-c8f331cffa51",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{inventory-configuration-api-url}}/api/unit-readiness/availability/unit-activation-window-without-dates/unavailable-unit-ids"
+					},
+					"response": []
+				},
+				{
+					"name": "UnitActivationWindows-with - Get Unavailable Units",
+					"id": "f66351a8-f2fe-4cf9-a29f-dd44fe318598",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{inventory-configuration-api-url}}/api/unit-readiness/availability/unit-activation-window-with-dates/unavailable-unit-ids?CheckIn=2019-10-14&CheckOut=2019-10-15",
+							"host": [
+								"{{inventory-configuration-api-url}}"
+							],
+							"path": [
+								"api",
+								"unit-readiness",
+								"availability",
+								"unit-activation-window-with-dates",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "CheckIn",
+									"value": "2019-10-14"
+								},
+								{
+									"key": "CheckOut",
+									"value": "2019-10-15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TripFinderDisplayFilter - Get Unavailable Units",
+					"id": "c093f13e-cc13-4aeb-9fab-cd9eab51102a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{inventory-configuration-api-url}}/api/search-filter/trip-finder-display-filter/unavailable-unit-ids"
+					},
+					"response": []
+				},
+				{
+					"name": "UnitCharacteristics - Get Unavailable Units",
+					"id": "e1f54d68-1b02-4b8b-b9ac-85fbe6487238",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{inventory-configuration-api-url}}/api/unit-characteristics/availability/unavailable-unit-ids?NumberOfTravelers=2&VacationStyleIds=1",
+							"host": [
+								"{{inventory-configuration-api-url}}"
+							],
+							"path": [
+								"api",
+								"unit-characteristics",
+								"availability",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "NumberOfTravelers",
+									"value": "2"
+								},
+								{
+									"key": "DestinationIds",
+									"value": "23",
+									"disabled": true
+								},
+								{
+									"key": "PropertyIds",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "RegionIds",
+									"value": "49",
+									"disabled": true
+								},
+								{
+									"key": "VacationStyleIds",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Liveness",
+					"id": "d78e1522-0cd4-49bc-8976-2d24758f714c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{inventory-configuration-api-url}}/health/liveness"
+					},
+					"response": []
+				},
+				{
+					"name": "Health Readiness",
+					"id": "92ed7735-cb0d-444c-b379-3b3337877dfe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{inventory-configuration-api-url}}/health/readiness"
+					},
+					"response": []
+				}
+			],
+			"id": "8c6809f6-9a2c-46fb-a65c-a4a80bca74ba"
+		},
+		{
+			"name": "Reservations",
+			"item": [
+				{
+					"name": "Get Unavailable Units",
+					"id": "dc6894cf-0f73-47f4-8d18-39a7b8a864b4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{reservations-api-url}}/api/availability/unavailable-unit-ids?CheckIn=2019-10-14&CheckOut=2019-10-15",
+							"host": [
+								"{{reservations-api-url}}"
+							],
+							"path": [
+								"api",
+								"availability",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "CheckIn",
+									"value": "2019-10-14"
+								},
+								{
+									"key": "CheckOut",
+									"value": "2019-10-15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Health",
+					"id": "d2074b05-e3c8-402b-9a05-577894e012db",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{reservations-api-url}}/health/liveness"
+					},
+					"response": []
+				}
+			],
+			"id": "550d5de5-0328-4c9b-b25a-a22e25a78868"
+		},
+		{
+			"name": "Search Engine",
+			"item": [
+				{
+					"name": "TripFinderSearchWithDates",
+					"id": "d01dd467-a126-465a-b0dd-ae012d0f166e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Correlation-Id",
+								"value": "Clem1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{search-engine-api-url}}/api/TripFinderSearch/trip-finder-with-dates/units?inventoryCollectionId=4&NumberOfTravelers=2&VacationStyleIds=5&checkIn=2020-02-01&checkOut=2020-02-07",
+							"host": [
+								"{{search-engine-api-url}}"
+							],
+							"path": [
+								"api",
+								"TripFinderSearch",
+								"trip-finder-with-dates",
+								"units"
+							],
+							"query": [
+								{
+									"key": "inventoryCollectionId",
+									"value": "4"
+								},
+								{
+									"key": "NumberOfTravelers",
+									"value": "2"
+								},
+								{
+									"key": "RegionIds",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "DestinationIds",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "VacationStyleIds",
+									"value": "5",
+									"description": ","
+								},
+								{
+									"key": "PropertyIds",
+									"value": "1",
+									"description": "nullable",
+									"disabled": true
+								},
+								{
+									"key": "checkIn",
+									"value": "2020-02-01"
+								},
+								{
+									"key": "checkOut",
+									"value": "2020-02-07"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TripFinderSearchWithoutDates",
+					"id": "7fab8080-4fb6-42ff-9b85-c2eab191cc3c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{search-engine-api-url}}/api/TripFinderSearch/trip-finder-without-dates/units?inventoryCollectionId=4&NumberOfTravelers=2&VacationStyleIds=1",
+							"host": [
+								"{{search-engine-api-url}}"
+							],
+							"path": [
+								"api",
+								"TripFinderSearch",
+								"trip-finder-without-dates",
+								"units"
+							],
+							"query": [
+								{
+									"key": "inventoryCollectionId",
+									"value": "4"
+								},
+								{
+									"key": "NumberOfTravelers",
+									"value": "2"
+								},
+								{
+									"key": "RegionIds",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "DestinationIds",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "VacationStyleIds",
+									"value": "1"
+								},
+								{
+									"key": "PropertyIds",
+									"value": "1",
+									"description": "nullable",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Liveness",
+					"id": "166eaf8d-a573-4c49-bdda-f25a7ba8d815",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{search-engine-api-url}}/health/liveness"
+					},
+					"response": []
+				}
+			],
+			"id": "44e38cc5-d65d-458b-b11e-d5e6ff6f57b1"
+		},
+		{
+			"name": "StopSell",
+			"item": [
+				{
+					"name": "Get Unavailable Units",
+					"id": "1cd082cf-14d7-4be7-91d1-385ae38030cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{stop-sells-api-url}}/api/availability/unavailable-unit-ids?CheckIn=2019-10-14&CheckOut=2019-10-15",
+							"host": [
+								"{{stop-sells-api-url}}"
+							],
+							"path": [
+								"api",
+								"availability",
+								"unavailable-unit-ids"
+							],
+							"query": [
+								{
+									"key": "CheckIn",
+									"value": "2019-10-14"
+								},
+								{
+									"key": "CheckOut",
+									"value": "2019-10-15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Liveness",
+					"id": "f5f34138-2539-4f77-9660-8cd6a5a64fbb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{stop-sells-api-url}}/health/liveness"
+					},
+					"response": []
+				},
+				{
+					"name": "Health Readiness",
+					"id": "c7d6f699-58aa-436e-aad3-61be843d2550",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{stop-sells-api-url}}/health/readiness"
+					},
+					"response": []
+				}
+			],
+			"id": "9e159bf1-3213-4571-b442-80742020189a"
+		}
+	]
+}
